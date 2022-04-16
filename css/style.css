@@ -319,15 +319,13 @@ body {
 	}
 }
 
+/* ==================================== */
+
 .featured-mugs {}
 
-.featured-mugs__container {
-	margin-bottom: 200px;
-}
+.featured-mugs__container {}
 
-.featured-mugs__title {
-	margin-bottom: 50px;
-}
+.featured-mugs__title {}
 
 .block-title {
 	display: flex;
@@ -340,7 +338,7 @@ body {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 
-	color: #1D1F2E;
+	margin-bottom: 50px;
 }
 
 .block-title::before,
@@ -353,21 +351,23 @@ body {
 }
 
 
-.featured-mugs__list {
+.featured-mugs__list {}
+
+.coffee-list {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	row-gap: 50px;
 }
 
-.coffee-list {}
-
-.coffee-list__card {}
+.featured-mugs__card {
+	width: 49%;
+}
 
 .coffee-card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 49%;
 }
 
 .coffee-card__img {
@@ -379,7 +379,7 @@ body {
 }
 
 .coffee-card__title {
-	font-size: calc(15px + (20 - 15)*((100vw - 320px) / (1200 - 320)));
+	font-size: calc(14px + (20 - 14)*((100vw - 320px) / (1200 - 320)));
 	line-height: 1.5;
 
 	text-align: center;
@@ -429,4 +429,29 @@ body {
 	color: #1D1F2E66;
 	opacity: 40%;
 
+}
+
+
+/* ==================================== */
+
+.products {}
+
+.products__container {
+	margin-bottom: 200px;
+}
+
+.products__title {}
+
+.block-title {}
+
+.products__list {}
+
+.products__card {
+	width: 32%;
+}
+
+@media (max-width: 450.98px) {
+	.products__card {
+		width: 49%;
+	}
 }
